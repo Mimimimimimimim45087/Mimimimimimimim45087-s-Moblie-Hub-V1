@@ -1,19 +1,361 @@
---[[
+game:GetService("StarterGui"):SetCore("SendNotification", { 
 
- .____                  ________ ___.    _____                           __                
+        Title = "Hey!";
 
- |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
+        Text = "Thanks For Using This Hub!";
 
- |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
+        Icon = "rbxthumb://type=Asset&id=4471419560&w=150&h=150"})
 
- |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
+    Duration = 16;
 
- |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
+wait(4)
 
-         \/          \/         \/    \/                \/     \/     \/                   
+game:GetService("StarterGui"):SetCore("SendNotification", { 
 
-          \_Welcome to LuaObfuscator.com   (Alpha 0.2.5) ~  Much Love, Ferib 
+        Title = "Hey!";
 
-]]--
+        Text = "The Script Will Now Load, Please Wait.";
 
-local v0=string.char;local v1=string.byte;local v2=string.sub;local v3=bit32 or bit ;local v4=v3.bxor;local v5=table.concat;local v6=table.insert;local function v7(v8,v9)local v14={};for v37=1, #v8 do v6(v14,v0(v4(v1(v2(v8,v37,v37 + 1 )),v1(v2(v9,1 + ((v37-1)% #v9) ,1 + ((v37-1)% #v9) + 1 )))%256 ));end return v5(v14);end game:GetService("StarterGui"):SetCore("SendNotification",{Title="Hey!",Text="Thanks For Using This Hub!",Icon="rbxthumb://type=Asset&id=4471419560&w=150&h=150"});Duration=16;wait(12 -8 );game:GetService("StarterGui"):SetCore("SendNotification",{Title="Hey!",Text="The Script Will Now Load, Please Wait.",Icon="rbxthumb://type=Asset&id=4471419560&w=150&h=150"});Duration=20;wait(3 + 5 );game:GetService("StarterGui"):SetCore("SendNotification",{Title="Loaded!",Text="Welcome! ",Icon="rbxthumb://type=Asset&id=4471419560&w=150&h=150"});Duration=9 + 1 ;wait(1);game:GetService("StarterGui"):SetCore("SendNotification",{Title="Version 1`",Text="Original",Icon="rbxthumb://type=Asset&id=4471419560&w=150&h=150"});Duration=4 + 6 ;wait(0.1 -0 );local v10=loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))();local v11=v10.CreateLib("ajudantedomimi's Moblie Admin","DarkTheme");local v12=v11:NewTab("Admin");local v13=v12:NewSection("Admin Commands");v13:NewButton("Fly","Fly Around",function()print("Clicked");loadstring(game:HttpGet("https://pastefy.ga/ZNWEGcFQ"))();end);v13:NewButton("Inf Jump","Jumps Non Stop",function()local v15=0 -0 ;local v16;local v17;while true do if (v15==(61 -(46 + 12))) then v17.MouseButton1Click:connect(function()local v51=0;local v52;local v53;while true do if (v51==0) then v52=v17.Text:sub(string.len("Infinite Jump: ") + 1 );v53=((v52=="Off") and "On") or ((v52=="On") and "Off") ;v51=1;end if (v51==(1 + 0)) then v16=v53=="On" ;v17.Text="Infinite Jump: "   .. v53 ;break;end end end);break;end if (v15==1) then game:GetService("UserInputService").JumpRequest:connect(function()if v16 then game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState("Jumping");end end);v17=CreateButton("Infinite Jump: Off",StuffFrame);v15=1 + 1 ;end if (v15==0) then print("Clicked");v16=true;v15=299 -(146 + 152) ;end if (v15==(2 + 0)) then v17.Position=UDim2.new(0 + 0 ,10,0,130);v17.Size=UDim2.new(0 -0 ,150,0 -0 ,125 -95 );v15=2 + 1 ;end end end);v13:NewButton("Hat Orbit (Need Netless)","Hat orbit",function()print("Clicked");game:GetService("StarterGui"):SetCore("SendNotification",{Title="Hey!",Text="You're Hats Are Now Orbiting You.",Icon="rbxthumb://type=Asset&id=4471419560&w=150&h=150"});Duration=16;loadstring(game:HttpGet("https://pastefy.ga/ZNWEGcFQ/raw"))();end);v13:NewButton("Netless","netless",function()print("Clicked");for v38,v39 in next,game:GetService("Players").LocalPlayer.Character:GetDescendants() do if (v39:IsA("BasePart") and (v39.Name~="HumanoidRootPart")) then game:GetService("RunService").Heartbeat:connect(function()v39.Velocity=Vector3.new( -(56 -26),0 -0 ,0 -0 );end);end end game:GetService("StarterGui"):SetCore("SendNotification",{Title="Hey!",Text="Netless Has Successfully Been Activated. ",Icon="rbxthumb://type=Asset&id=4471419560&w=150&h=150"});Duration=1 + 15 ;end);v13:NewButton("Fling Gui","fling",function()print("Clicked");game:GetService("StarterGui"):SetCore("SendNotification",{Title="Hey!",Text="This Script May Cause Errors, So Please Be Careful!",Icon="rbxthumb://type=Asset&id=4471419560&w=150&h=150"});Duration=16;wait(2);loadstring(game:HttpGet("https://pastebin.com/raw/r97d7dS0",true))();end);v13:NewButton("Time reverse","most op",function()print("Clicked");local v18="E";local v19=133 -73 ;local v20=3 -2 ;local v21=game:GetService("RbxAnalyticsService"):GetSessionId();local v22,v23,v24,v25={},game:GetService("UserInputService"),game:GetService("Players").LocalPlayer,game:GetService("RunService");pcall(v25.UnbindFromRenderStep,v25,v21);local function v26()return v24.Character or v24.CharacterAdded:Wait() ;end _G[v7("\0\171\1\36\53\191","\103\206\117\76\71\207\61")]=function(v27)return v27:FindFirstChild("HumanoidRootPart") or v27.RootPart or v27.PrimaryPart or v27:FindFirstChild("Torso") or v27:FindFirstChild("UpperTorso") or v27:FindFirstChildWhichIsA("BasePart") ;end;local v28={lastinput=false,canrevert=true};v28[v7("\143\237\191\9\17\18\171","\206\137\201\104\127\113")]=function(v29,v30,v31,v32,v33)local v40=0 + 0 ;while true do if (v40==0) then if ( #v22>(v19 * 60)) then table.remove(v22,125 -(49 + 75) );end if (v33 and  not v29.canrevert) then v29.canrevert=true;end v40=3 -2 ;end if (v40==1) then if v29.lastinput then v32.PlatformStand=false;v29.lastinput=false;end table.insert(v22,{v31.CFrame,v31.Velocity,v32:GetState(),v32.PlatformStand,v30:FindFirstChildOfClass("Tool")});break;end end end;v28[v7("\2\9\74\69\82\209","\80\108\60\32\32\165\186\100")]=function(v29,v30,v31,v32)local v41=1310 -(116 + 1194) ;local v42;local v43;local v44;while true do if (v41==2) then v31.CFrame=v43[1 + 0 ];v31.Velocity= -v43[3 -1 ];v32:ChangeState(v43[3]);v41=3;end if (v41==0) then v42= #v22;if ((v42==0) or  not v29.canrevert) then local v67=0 -0 ;while true do if (v67==(1 + 0)) then return;end if (v67==(950 -(911 + 39))) then v29.canrevert=false;v29:Advance(v30,v31,v32);v67=1 + 0 ;end end end for v62=738 -(93 + 644) ,v20 do local v63=989 -(536 + 453) ;while true do if (v63==(679 -(203 + 476))) then table.remove(v22,v42);v42=v42-1 ;break;end end end v41=1 + 0 ;end if (v41==(957 -(785 + 169))) then v32.PlatformStand=v43[1 + 3 ];v44=v30:FindFirstChildOfClass("Tool");if v43[4 + 1 ] then if  not v44 then v32:EquipTool(v43[5]);end else v32:UnequipTools();end break;end if (v41==(1 -0)) then v29.lastinput=true;v43=v22[v42];table.remove(v22,v42);v41=2 + 0 ;end end end;local function v36()local v45=0;local v46;local v47;local v48;while true do if (v45==1) then v48=v46:FindFirstChildWhichIsA("Humanoid");if v23:IsKeyDown(Enum.KeyCode[v18]) then v28:Revert(v46,v47,v48);else v28:Advance(v46,v47,v48,true);end break;end if (v45==0) then v46=v26();v47=gethrp(v46);v45=1;end end end v25:BindToRenderStep(v21,1,v36);end);local v12=v11:NewTab("Extra");local v13=v12:NewSection("Other");v13:NewButton("Infinite Yield","More Commands",function()print("Clicked");loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))();end);v13:NewButton("Keyboard","idk",function()print("Clicked");loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt"))();end);v13:NewKeybind("KeybindText","KeybindInfo",Enum.KeyCode.F,function()v10:ToggleUI();end);v13:NewLabel("More Soon");
+        Icon = "rbxthumb://type=Asset&id=4471419560&w=150&h=150"})
+
+    Duration = 20;
+
+wait(8)
+
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+
+        Title = "Loaded!";
+
+        Text = "Welcome! ";
+
+        Icon = "rbxthumb://type=Asset&id=4471419560&w=150&h=150"})
+
+    Duration = 10;
+
+wait(1)
+
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+
+        Title = "Version v1`";
+
+        Text = "Original Version";
+
+        Icon = "rbxthumb://type=Asset&id=4471419560&w=150&h=150"})
+
+    Duration = 10;
+
+wait(0.1)
+
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+
+local Window = Library.CreateLib("ajudantedomimi's Moblie Admin", "DarkTheme")
+
+local Tab = Window:NewTab("Admin")
+
+local Section = Tab:NewSection("Admin Commands")
+
+Section:NewButton("Fly", "Fly Around", function()
+
+    print("Clicked")
+
+loadstring(game:HttpGet('https://pastefy.ga/mAN37oHY/raw'))();
+
+end)
+
+Section:NewButton("Inf Jump", "Jumps Non Stop", function()
+
+    print("Clicked")
+
+local InfiniteJumpEnabled = true
+
+game:GetService("UserInputService").JumpRequest:connect(function()
+
+	if InfiniteJumpEnabled then		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+
+	end
+
+end)
+
+local InfiniteJump = CreateButton("Infinite Jump: Off", StuffFrame)
+
+InfiniteJump.Position = UDim2.new(0,10,0,130)
+
+InfiniteJump.Size = UDim2.new(0,150,0,30)
+
+InfiniteJump.MouseButton1Click:connect(function()
+
+	local state = InfiniteJump.Text:sub(string.len("Infinite Jump: ") + 1) --too lazy to count lol
+
+	local new = state == "Off" and "On" or state == "On" and "Off"
+
+	InfiniteJumpEnabled = new == "On"
+
+	InfiniteJump.Text = "Infinite Jump: " .. new
+
+end)
+
+end)
+
+Section:NewButton("Hat Orbit (Need Netless)", "Hat orbit", function()
+
+    print("Clicked")
+
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+
+        Title = "Hey!";
+
+        Text = "You're Hats Are Now Orbiting You.";
+
+        Icon = "rbxthumb://type=Asset&id=4471419560&w=150&h=150"})
+
+    Duration = 16;
+
+loadstring(game:HttpGet("https://pastefy.ga/ZNWEGcFQ/raw"))()
+
+end)
+
+Section:NewButton("Netless", "netless", function()
+
+    print("Clicked")
+
+for i,v in next, game:GetService("Players").LocalPlayer.Character:GetDescendants() do
+
+    if v:IsA("BasePart") and v.Name ~="HumanoidRootPart" then 
+
+    game:GetService("RunService").Heartbeat:connect(function()
+
+    v.Velocity = Vector3.new(-30,0,0)
+
+    end)
+
+    end
+
+    end
+
+        game:GetService("StarterGui"):SetCore("SendNotification", { 
+
+        Title = "Hey!";
+
+        Text = "Netless Has Successfully Been Activated. ";
+
+        Icon = "rbxthumb://type=Asset&id=4471419560&w=150&h=150"})
+
+    Duration = 16;
+
+end)
+
+Section:NewButton("Fling Gui", "fling", function()
+
+    print("Clicked")
+
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+
+        Title = "Hey!";
+
+        Text = "This Script May Cause Errors, So Please Be Careful!";
+
+        Icon = "rbxthumb://type=Asset&id=4471419560&w=150&h=150"})
+
+    Duration = 16;
+
+wait(2)
+
+loadstring(game:HttpGet('https://pastebin.com/raw/r97d7dS0', true))()
+
+end)
+
+Section:NewButton("Time reverse", "most op", function()
+
+    print("Clicked")
+
+local key = "E" --key to intiate the flashback. see https://create.roblox.com/docs/reference/engine/enums/KeyCode for an exhaustive list
+
+local flashbacklength = 60 --how long the flashback should be stored in approx seconds
+
+local flashbackspeed = 1 --how many frames to skip during flashback (set to 0 to disable)
+
+local name = game:GetService("RbxAnalyticsService"):GetSessionId() --unique id that games cannot access but does not change on subsequent executions (used for the name of the binded function)
+
+local frames,uis,LP,RS = {},game:GetService("UserInputService"),game:GetService("Players").LocalPlayer,game:GetService("RunService") --set some vars
+
+pcall(RS.UnbindFromRenderStep,RS,name) --unbind the function if previously binded
+
+local function getchar()
+
+   return LP.Character or LP.CharacterAdded:Wait()
+
+end
+
+function gethrp(c) --gethrp ripped from my env script and stripped of arguments
+
+return c:FindFirstChild("HumanoidRootPart") or c.RootPart or c.PrimaryPart or c:FindFirstChild("Torso") or c:FindFirstChild("UpperTorso") or c:FindFirstChildWhichIsA("BasePart")
+
+end
+
+local flashback = {lastinput=false,canrevert=true}
+
+function flashback:Advance(char,hrp,hum,allowinput)
+
+   
+
+   if #frames>flashbacklength*60 then --make sure we don't have too much history
+
+       table.remove(frames,1)
+
+   end
+
+   
+
+   if allowinput and not self.canrevert then
+
+       self.canrevert = true
+
+   end
+
+   
+
+   if self.lastinput then --make sure platformstand goes back to normal
+
+       hum.PlatformStand = false
+
+       self.lastinput = false
+
+   end
+
+   
+
+   table.insert(frames,{
+
+       hrp.CFrame,
+
+       hrp.Velocity,
+
+       hum:GetState(),
+
+       hum.PlatformStand,
+
+       char:FindFirstChildOfClass("Tool")
+
+   })
+
+end
+
+function flashback:Revert(char,hrp,hum)
+
+   local num = #frames
+
+   if num==0 or not self.canrevert then --add to history and return if no history is present
+
+       self.canrevert = false
+
+       self:Advance(char,hrp,hum)
+
+       return
+
+   end
+
+   for i=1,flashbackspeed do --skip frames (if enabled)
+
+       table.remove(frames,num)
+
+       num=num-1
+
+   end
+
+   self.lastinput = true
+
+   local lastframe = frames[num]
+
+   table.remove(frames,num)
+
+   hrp.CFrame = lastframe[1]
+
+   hrp.Velocity = -lastframe[2]
+
+   hum:ChangeState(lastframe[3])
+
+   hum.PlatformStand = lastframe[4] --platformstand to make flying look normal again
+
+   local currenttool = char:FindFirstChildOfClass("Tool")
+
+   if lastframe[5] then --equip/unequip tools
+
+       if not currenttool then
+
+           hum:EquipTool(lastframe[5])
+
+       end
+
+   else
+
+       hum:UnequipTools()
+
+   end
+
+end
+
+local function step() --function that runs every frame
+
+   local char = getchar()
+
+   local hrp = gethrp(char)
+
+   local hum = char:FindFirstChildWhichIsA("Humanoid")
+
+   if uis:IsKeyDown(Enum.KeyCode[key]) then --begin flashback
+
+       flashback:Revert(char,hrp,hum)
+
+   else
+
+       flashback:Advance(char,hrp,hum,true)
+
+   end
+
+end
+
+RS:BindToRenderStep(name,1,step) --finally, bind our function
+
+end)
+
+Section:NewButton("scp 173", "deadlist script", function()
+
+    print("Clicked")
+
+loadstring(game:HttpGet('https://pastefy.ga/ZPoJyWSb/raw'))();
+
+end)
+
+Section:NewButton("Let others control you", "they will abuse you..", function()
+
+    print("Clicked")
+
+loadstring(game:HttpGet('https://pastefy.ga/hltlfJeU/raw'))();
+
+end)
+
+local Tab = Window:NewTab("Extra")
+
+local Section = Tab:NewSection("Other")
+
+Section:NewButton("Infinite Yield", "More Commands", function()
+
+    print("Clicked")
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+
+end)
+
+Section:NewButton("Keyboard", "idk", function()
+
+    print("Clicked")
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt"))()
+
+end)
+
+Section:NewLabel("Helper: eaterpoop8283: Made Buttons And Tabs")
+
+Section:NewLabel("Creator: Ajudantedomimi: Made Labels, The Gui, And More!")
+
+Section:NewLabel("More Soon In Version v2`")
